@@ -3,13 +3,13 @@
 
 ## Write a short comment describing this function
 
-#This functoin will 
+#This function will create a matrix, and define 3 others functions:
+#get() : Return the matrix
+#setinverse() : Compute the inverse of the matrix
+#getinvers()) : Return the inverse of the matrix
+
 makeCacheMatrix <- function(x = matrix()) {
     inverse <- NULL
-    #set <- function(y){
-    #    x <<- y
-    #    inverse <<-NULL
-    #}
     get <- function() x
     setinverse <- function(solve) inverse <<- solve
     getinverse <- function() inverse
@@ -18,6 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+# This function will return the inverse of the matrix created with the makeCacheMatrix.
+# If the inverse is not present in the cache, it will compute it and store it.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
